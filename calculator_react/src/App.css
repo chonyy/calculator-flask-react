@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -12,6 +13,10 @@ html, body {
 
 .calculation-form {
     margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-field {
@@ -22,5 +27,25 @@ html, body {
 label {
     color: #666;
     font-size: 2rem;
-    margin:0.5rem 0;
+    margin: 0.5rem 0;
+}
+
+.button {
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: orangered;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
 }

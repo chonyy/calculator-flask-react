@@ -1,16 +1,16 @@
-version: '3'
+version: "3"
 
 services:
-  api:
-    container_name: api
-    build: ./calculator_flask
-    ports:
-      - 8080:80
+    api:
+        container_name: api
+        build: ./calculator_flask
+        ports:
+            - 8080:80
 
-  website:
-    container_name: website
-    build: ./calculator_react
-    ports:
-      - 3000:3000
-    depends_on:
-      - api
+    website:
+        container_name: website
+        build: ./calculator_react
+        ports:
+            - 3000:3000
+        depends_on:
+            - api
